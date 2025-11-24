@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -9,43 +10,44 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           {/* Left Side - Text Content */}
-          <div className="md:text-right">
+          <div className="md:text-left">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="font-hero text-7xl md:text-7xl text-gray-dark mb-6"
             >
-              Hi, I'm <span className="text-gray-dark"><br/>Your Name</span>.
+              Hi, I'm <span className='text-accent-dark'>Name</span>.
+              <div className='text-4xl mt-4'>Job Title.</div>
             </motion.h1>
             
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl md:text-2xl text-gray-light mb-8"
+              className="text-xl md:text-xl text-gray-light mb-8"
             >
-              Empathy, Evidence, Design.<br/>Learning that <span className='text-accent-dark'>grows</span> - and bridges cultures.
+              Nulla facilisi. Suspendisse tincidunt nunc sit amet lectus pellentesque, vel pharetra urna varius. Pellentesque ac ligula vel diam semper elementum. Donec consequat, dui quis rutrum interdum, enim turpis sagittis libero, at convallis leo augue nec ante. Fusce scelerisque nunc ligula, vitae venenatis elit sodales ac. Pellentesque ac maximus diam, nec dignissim eros.
             </motion.p>
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex md:flex-row-reverse gap-4"
+              className="flex gap-4"
             >
-              <a
-                href="#work"
+              <Link 
+                href="/work"
                 className="px-8 py-3 bg-gray-dark text-white rounded-lg hover:bg-accent-dark transition-colors duration-200 font-medium"
               >
                 View My Work
-              </a>
-              <a
-                href="#contact"
-                className="px-8 py-3 border-2 border-gray-dark text-gray-dark rounded-lg hover:bg-gray-dark hover:text-white transition-colors duration-200 font-medium"
+              </Link>
+              <Link 
+                href="/contact"
+                className="px-8 py-3 border-2 border-gray-dark text-gray-dark rounded-lg hover:text-accent-dark hover:border-accent-dark transition-colors duration-200 font-medium"
               >
                 Contact Me
-              </a>
+              </Link>
             </motion.div>
           </div>
 

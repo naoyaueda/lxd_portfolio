@@ -1,4 +1,3 @@
-import Navigation from './components/Navigation';
 import Hero from './components/sections/Hero';
 import Work from './components/sections/Work';
 import About from './components/sections/About';
@@ -10,7 +9,6 @@ export default async function Home() {
 
   return (
     <main>
-      <Navigation />
       <Hero />
       <Work posts={posts} />
       <About />
