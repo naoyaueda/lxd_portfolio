@@ -1,6 +1,6 @@
 // WordPress API Configuration and Helper Functions
 
-const WORDPRESS_API_URL = process.env.NEXT_PUBLIC_WORDPRESS_API_URL || 'https://YOUR-WORDPRESS.com/wp-json/wp/v2';
+const WORDPRESS_API_URL = process.env.NEXT_PUBLIC_WORDPRESS_API_URL || 'https://projects.helloyukie.com/wp-json/wp/v2';
 
 export interface WordPressPost {
   id: number;

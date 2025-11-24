@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { AiFillHome } from 'react-icons/ai';
 import { MdWork } from 'react-icons/md';
 import { FaUser } from 'react-icons/fa';
@@ -10,6 +11,7 @@ import { IoMdMail } from 'react-icons/io';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,10 +23,10 @@ export default function Navigation() {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home', icon: AiFillHome },
-    { name: 'Work', href: '#work', icon: MdWork },
-    { name: 'About', href: '#about', icon: FaUser },
-    { name: 'Contact', href: '#contact', icon: IoMdMail },
+    { name: 'Home', href: '/', icon: AiFillHome },
+    { name: 'Work', href: '/work', icon: MdWork },
+    { name: 'About', href: '/about', icon: FaUser },
+    { name: 'Contact', href: '/contact', icon: IoMdMail },
   ];
 
     // Smooth scroll function
@@ -60,15 +62,19 @@ export default function Navigation() {
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => {
               const Icon = item.icon;
+              const isActive = pathname === item.href;
+
               return (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
-                  className="flex flex-col items-center text-gray-700 hover:text-accent-dark transition-colors duration-200 font-medium group"
+                  className={`flex flex-col items-center transition-colors duration-200 font-medium group ${
+                    isActive ? 'text-accent-dark' : 'text-gray-700 hover:text-accent'
+                  }`}
                 >
                   <Icon className="text-xl mb-1 group-hover:scale-110 transition-transform" />
                   <span className="text-sm">{item.name}</span>
-                </a>
+                </Link>
               );
             })}
           </div>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto, Playfair_Display_SC, Lora } from "next/font/google";
 import "./globals.css";
+import Navigation from "./components/Navigation";
+import Footer from './components/sections/Footer';
 
 // Configure Roboto font
 const roboto = Roboto({ 
@@ -37,7 +39,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${roboto.variable} ${playfair.variable} ${lora.variable}`} >
       <body className={lora.className}>
+        <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -14,12 +14,7 @@ export default function About() {
           >
             <h2 className="text-4xl md:text-5xl font-hero mb-6">About Me</h2>
             <p className="text-lg text-gray-700 mb-4">
-              I'm a designer with a passion for creating beautiful, functional digital experiences.
-              With years of experience in UX/UI design, I help brands tell their stories through design.
-            </p>
-            <p className="text-lg text-gray-700">
-              My approach combines creative thinking with strategic problem-solving to deliver
-              designs that not only look great but also achieve business goals.
+              Nulla facilisi. Suspendisse tincidunt nunc sit amet lectus pellentesque, vel pharetra urna varius. Pellentesque ac ligula vel diam semper elementum. Donec consequat, dui quis rutrum interdum, enim turpis sagittis libero, at convallis leo augue nec ante. Fusce scelerisque nunc ligula, vitae venenatis elit sodales ac. Pellentesque ac maximus diam, nec dignissim eros.
             </p>
           </motion.div>
           
