@@ -10,7 +10,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'lxd.helloyukie.com',
+        hostname: 'YOURWORDPRESS.com',
         port: '',
         pathname: '/**',
       },

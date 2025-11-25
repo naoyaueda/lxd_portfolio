@@ -24,7 +24,7 @@ export default function Navigation() {
 
   const navItems = [
     { name: 'Home', href: '/', icon: AiFillHome },
-    { name: 'Work', href: '/work', icon: MdWork },
+    { name: 'Projects', href: '/projects', icon: MdWork},
     { name: 'About', href: '/about', icon: FaUser },
     { name: 'Contact', href: '/contact', icon: IoMdMail },
   ];

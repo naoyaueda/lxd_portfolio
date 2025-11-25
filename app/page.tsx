@@ -1,16 +1,16 @@
 import Hero from './components/sections/Hero';
-import Work from './components/sections/Work';
+import Projects from './components/sections/Projects';
 import About from './components/sections/About';
 import Contact from './components/sections/Contact';
-import { getPortfolioPosts } from '@/lib/wordpress';
+import { getPortfolioPages } from '@/lib/wordpress'; 
 
 export default async function Home() {
-  const posts = await getPortfolioPosts();
+  const pages = await getPortfolioPages();
 
   return (
     <main>
       <Hero />
-      <Work posts={posts} />
+      <Projects pages={pages} />
       <About />
       <Contact />
     </main>
