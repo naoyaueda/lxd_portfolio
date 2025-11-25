@@ -44,7 +44,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   }
 
   return (
-    <main className="pt-16 max-w-4xl mx-auto px-4 py-20 prose prose-lg">
+    <main className="pt-32 max-w-4xl mx-auto px-4 py-20 prose prose-lg">
       <h1 dangerouslySetInnerHTML={{ __html: page.title.rendered }} />
       <article dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
     </main>
