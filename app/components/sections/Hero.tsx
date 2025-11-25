@@ -18,7 +18,7 @@ export default function Hero() {
               className="font-hero text-7xl md:text-7xl text-gray-dark mb-6"
             >
               Hi, I'm <span className='text-accent-dark'>Name</span>.
-              <div className='text-4xl mt-4'>Job Title.</div>
+              <div className='text-4xl mt-4'>Bilingual LXD & Strategist.</div>
             </motion.h1>
             
             <motion.p
@@ -27,7 +27,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl md:text-xl text-gray-light mb-8"
             >
-              Nulla facilisi. Suspendisse tincidunt nunc sit amet lectus pellentesque, vel pharetra urna varius. Pellentesque ac ligula vel diam semper elementum. Donec consequat, dui quis rutrum interdum, enim turpis sagittis libero, at convallis leo augue nec ante. Fusce scelerisque nunc ligula, vitae venenatis elit sodales ac. Pellentesque ac maximus diam, nec dignissim eros.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat, mi vel sagittis egestas, lacus nibh fermentum lorem, quis finibus urna lorem vel nibh. Mauris vehicula enim condimentum efficitur pharetra.
             </motion.p>
             
             <motion.div
