@@ -11,7 +11,7 @@ export default function Footer() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                 >
-                    <div className='text-lg text-gray-light text-center font-hero'>&copy; 2025 Yukie Ueda, All right reserved.</div>
+                    <div className='text-lg text-gray-light text-center font-hero'>&copy; 2025 Company, All right reserved.</div>
                 </motion.div>
             </div>
         </section>
